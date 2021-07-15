@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    box-sizing: border-box;
+}
+
+.title__pokemon-logo img{
+    width: 200px;
+}
+
+.title__text h1 {
+    text-align: center;
+}
+
+main {
+    box-sizing: border-box;
+}
+
+.screen {
+    width: 250px;
+    height: 150px;
+    background-image: url('/img/jackpot-screen1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen__table {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.screen__table tr {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.screen__table td {
+    width: 68px;
+    height: 109px;
+    display: flex;
+    align-items: center;
+}
+
+.screen__table img {
+    background-color: white;
+    max-width: 100%;
+    object-fit: contain;
+}

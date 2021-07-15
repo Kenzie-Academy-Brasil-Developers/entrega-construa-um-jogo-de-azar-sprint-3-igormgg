@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Slot Machine</title>
+</head>
+<body>
+    <header>
+        <section class="title">
+            <div class="title__pokemon-logo">
+                <img src="/img/pokemon-logo.png" alt="Pokémon Logo">
+            </div>
+            <div class="title__text">
+                <h1>Slot Machine</h1>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="screen">
+            <table class="screen__table">
+                <tr>
+                    <td><img src="img/4.png" name = 'left' alt="Left Box"></td>
+                    <td><img src="img/4.png" name = 'center' alt="Center Box"></td>
+                    <td><img src="img/4.png" name = 'right' alt="Right Box"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <form action="#">
+                <input type="button" value="Start" onclick="slot()">
+            </form>
+        </section>
+        <section>
+            Result: <span id="prize"></span>
+        </section>
+    </main>
+    <script src="slot.js"></script>
+</body>
+</html>
