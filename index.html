@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Slot Machine</title>
+    <title>PokéMachine</title>
 </head>
 <body>
     <header>
         <section class="title">
             <div class="title__pokemon-logo">
-                <img src="/img/pokemon-logo.png" alt="Pokémon Logo">
+                <img src="/img/jackpot-title-complete.png" alt="Pokémon Logo">
             </div>
             <div class="title__text">
-                <h1>Slot Machine</h1>
+                <h1>Quem será seu primeiro Pokémon? Jogue a Pokébola, e boa sorte!</h1>
             </div>
         </section>
     </header>
@@ -23,22 +26,22 @@
         <section class="screen">
             <table class="screen__table">
                 <tr>
-                    <td><img src="img/4.png" name = 'left' alt="Left Box"></td>
-                    <td><img src="img/4.png" name = 'center' alt="Center Box"></td>
-                    <td><img src="img/4.png" name = 'right' alt="Right Box"></td>
+                    <td><img src="img/0.png" name = 'left' alt="Pikachu"></td>
+                    <td><img src="img/1.png" name = 'center' alt="Pikachu"></td>
+                    <td><img src="img/2.png" name = 'right' alt="Pikachu"></td>
                 </tr>
             </table>
         </section>
 
-        <section>
+        <section class="pokeball">
             <form action="#">
-                <input type="button" value="Start" onclick="slot()">
+                <input type="button" value="" onclick="slot()">
             </form>
         </section>
-        <section>
-            Result: <span id="prize"></span>
-        </section>
-    </main>
-    <script src="slot.js"></script>
+        <section class="prize-result">
+            <span id="prize"></span>
+        </main>
+        <script src="slot.js"></script>
+    </section>
 </body>
 </html>

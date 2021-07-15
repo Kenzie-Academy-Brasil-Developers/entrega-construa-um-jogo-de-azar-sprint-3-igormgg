@@ -16,9 +16,9 @@ const slot = () =>{
     let random = setInterval(function(){
         counter ++
         
-        let left = Math.floor(Math.random()*10)
-        let center = Math.floor(Math.random()*10)
-        let right = Math.floor(Math.random()*10)
+        let left = Math.floor(Math.random()*3)
+        let center = Math.floor(Math.random()*3)
+        let right = Math.floor(Math.random()*3)
 
         document.left.src = list[left]
         document.center.src = list[center]
@@ -29,14 +29,14 @@ const slot = () =>{
             let final_center = list[center]
             let final_right = list[right]
 
-            if ((final_left === final_center) || (final_left === final_right) || (final_center === final_right)){
-                idPrize.innerHTML = 'You almost won. Keep trying!'
+            if ((final_left === final_center) && (final_left === final_right)){
+                idPrize.innerHTML = `Gotcha! Você capturou seu primeiro Pokémon! <img src="${final_center}">`
             }
-            else if ((final_left === final_center) && (final_left === final_right)){
-                idPrize.innerHTML = 'Congratulations, you won!'
+            else if ((final_left === final_center) || (final_left === final_right) || (final_center === final_right)){
+                idPrize.innerHTML = "Foi por pouco! Tente novamente!"
             }
             else {
-                idPrize.innerHTML = 'You lost. Try again!'
+                idPrize.innerHTML = 'O Pokémon escapou!'
             }
 
             counter = 0

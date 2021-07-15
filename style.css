@@ -1,8 +1,25 @@
+:root {
+    --pokémon-background: #185EAC;
+    --pokémon-hover: rgb(255, 255, 148);
+    --font-pokemon: 'Press Start 2P';
+    --font-color: rgb(255, 255, 0);
+    --font-shadow: 2px 2px 2px rgb(0 0 0 / 100%);
+}
+
 html {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
     box-sizing: border-box;
+    font-family: var(--font-pokemon);
+    font-size: 20px;
 }
 
 body {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/background-mobile.jpg);
+    background-size: cover;
     box-sizing: border-box;
     margin: 0px auto;
     display: flex;
@@ -12,24 +29,42 @@ body {
 
 header {
     box-sizing: border-box;
+    height: 35%;
+    padding-top: 0px;
+}
+
+.title__pokemon-logo {
+    display: flex;
+    justify-content: center;
 }
 
 .title__pokemon-logo img{
-    width: 200px;
+    width: 150px;
+}
+
+.title__text {
+    width: 250px;
 }
 
 .title__text h1 {
+    margin: 0px;
     text-align: center;
+    color: var(--font-color);
+    text-shadow: var(--font-shadow);
+    font-size: 0.7rem;
 }
 
 main {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .screen {
     width: 250px;
     height: 150px;
-    background-image: url('/img/jackpot-screen1.jpg');
+    background-image: url('/img/jackpot-screen.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -58,7 +93,125 @@ main {
 }
 
 .screen__table img {
-    background-color: white;
+    background-color: var(--pokémon-background);
     max-width: 100%;
     object-fit: contain;
+    border-radius: 5px;
+}
+
+.screen__table img:hover {
+    background-color: var(--pokémon-hover);
+}
+
+.pokeball form{
+    display: flex;
+    justify-content: center;
+}
+
+.pokeball input {
+    background: url(/img/pokeball.png);
+    background-size: contain;
+    border-radius: 100%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+
+.pokeball input:hover {
+    background: url(/img/pokeball-opened.png);
+    background-size: contain;
+}
+
+.prize-result {
+    display: flex;
+    justify-content: center;
+}
+
+#prize {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.5rem;
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 100%);
+    color: var(--font-color)
+}
+
+.result {
+    margin-top: 0px;
+}
+
+#prize img {
+    box-sizing: border-box;
+    width: 80px;
+    border-radius: 100%;
+}
+
+#prize img:hover {
+    background-color: var(--pokémon-hover);
+}
+
+@media (min-width: 350px){
+    .title__pokemon-logo img{
+        width: 200px;
+    }
+    .screen{
+        margin-top: 10px;
+    }
+    #prize img {
+        width: 100px;
+    }
+    .result {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 750px){
+    .title__pokemon-logo {
+        margin-top: 20px;
+    }
+    .title__pokemon-logo img{
+        width: 250px;
+    }
+    .title__text{
+        width: 400px;
+    }
+    .title__text h1 {
+        font-size: 1rem;
+    }
+    .screen {
+        width: 400px;
+        height: 240px;
+    }
+    .screen__table {
+        width: 400px;
+    }
+    .screen__table tr {
+        width: 350px;
+    }
+    .screen__table td {
+        width: 110px;
+    }
+    .pokeball input {
+        width: 100px;
+        height: 100px;
+    }
+    #prize {
+        font-size: 0.8rem;
+    }
+    #prize img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 950px){
+    body {
+        max-width: 1800px;
+        margin: 0px auto;
+        background-image: url(/img/background-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
