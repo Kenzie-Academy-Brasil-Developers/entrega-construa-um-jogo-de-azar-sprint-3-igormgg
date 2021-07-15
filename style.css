@@ -18,7 +18,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-image: url(/img/background-mobile.jpg);
+    background-image: url('img/background-mobile.jpg');
     background-size: cover;
     box-sizing: border-box;
     margin: 0px auto;
@@ -64,7 +64,7 @@ main {
 .screen {
     width: 250px;
     height: 150px;
-    background-image: url('/img/jackpot-screen.png');
+    background-image: url('img/jackpot-screen.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -109,7 +109,7 @@ main {
 }
 
 .pokeball input {
-    background: url(/img/pokeball.png);
+    background: url('img/pokeball.png');
     background-size: contain;
     border-radius: 100%;
     border: none;
@@ -119,7 +119,7 @@ main {
 }
 
 .pokeball input:hover {
-    background: url(/img/pokeball-opened.png);
+    background: url('img/pokeball-opened.png');
     background-size: contain;
 }
 
@@ -210,7 +210,7 @@ main {
     body {
         max-width: 1800px;
         margin: 0px auto;
-        background-image: url(/img/background-desktop.png);
+        background-image: url('img/background-desktop.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
