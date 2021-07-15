@@ -121,6 +121,7 @@ main {
 .pokeball input:hover {
     background: url('img/pokeball-opened.png');
     background-size: contain;
+    cursor: grabbing;
 }
 
 .prize-result {

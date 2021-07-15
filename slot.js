@@ -1,4 +1,5 @@
 let imgDir = 'img/'
+let sadPikachu = 'img/sad-pikachu.png'
 
 let list = new Array()
 
@@ -16,9 +17,9 @@ const slot = () =>{
     let random = setInterval(function(){
         counter ++
         
-        let left = Math.floor(Math.random()*3)
-        let center = Math.floor(Math.random()*3)
-        let right = Math.floor(Math.random()*3)
+        let left = Math.floor(Math.random()*4)
+        let center = Math.floor(Math.random()*4)
+        let right = Math.floor(Math.random()*4)
 
         document.left.src = list[left]
         document.center.src = list[center]
@@ -36,7 +37,7 @@ const slot = () =>{
                 idPrize.innerHTML = "Foi por pouco! Tente novamente!"
             }
             else {
-                idPrize.innerHTML = 'O Pokémon escapou!'
+                idPrize.innerHTML = `O Pokémon escapou! <img src="${sadPikachu}">`
             }
 
             counter = 0
