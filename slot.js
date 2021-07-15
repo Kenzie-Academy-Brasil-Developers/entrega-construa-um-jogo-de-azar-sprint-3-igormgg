@@ -1,4 +1,4 @@
-let imgDir = '/img/'
+let imgDir = 'img/'
 
 let list = new Array()
 
